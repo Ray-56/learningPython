@@ -66,5 +66,5 @@ if __name__ == '__main__':
     itchat.auto_login(hotReload=True)
 
     # 获取用户名
-    user = itchat.search_friends(name = '好友的昵称')
+    user = itchat.search_friends(name = '主淫')
     itchat.send(text, toUserName=user[0]['UserName'])

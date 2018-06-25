@@ -42,18 +42,11 @@ pics = listdir(user)
 
 numPic = len(pics)
 
-print(numPic)
-
 eachsize = int(math.sqrt(float(640 * 640) / numPic))
-
-print(eachsize)
 
 numline = int(640 / eachsize)
 
 toImage = Image.new('RGB', (640, 640))
-
-
-print(numline)
 
 x = 0
 y = 0
@@ -76,6 +69,5 @@ for i in pics:
 
 
 toImage.save(user + ".jpg")
-
 
 itchat.send_image(user + ".jpg", 'filehelper')
